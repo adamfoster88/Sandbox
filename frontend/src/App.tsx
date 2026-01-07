@@ -12,7 +12,6 @@ import {
   Bell,
   ChevronDown,
   LogOut,
-  TrendingUp,
   AlertTriangle,
   CheckCircle,
   Clock,
