@@ -1,0 +1,41 @@
+# ==============================================================================
+# DataFlow Platform - Terraform Variables
+# ==============================================================================
+# Copy this file to terraform.tfvars and fill in your values
+# DO NOT commit terraform.tfvars to source control (it's in .gitignore)
+# ==============================================================================
+
+# Project Configuration
+project_name = "dataflow"
+environment  = "dev"
+location     = "UK South"
+
+# GitHub Configuration
+github_repo_url = "https://github.com/adamfoster88/Sandbox"
+github_branch   = "main"
+
+# App Service Configuration
+app_service_sku = "B1"    # B1 = Basic (~$13/month), S1 = Standard (~$70/month)
+python_version  = "3.11"
+
+# ==============================================================================
+# YOUR EXISTING RESOURCES - Fill these in
+# ==============================================================================
+
+# SQL Server (your existing Azure SQL or SQL Server)
+sql_server_host     = "your-server.database.windows.net"
+sql_server_database = "your-database"
+sql_server_user     = "your-username"
+sql_server_password = "your-password"
+
+# Azure Blob Storage (your existing storage account)
+storage_account_name = "yourstorageaccount"
+storage_account_key  = "your-storage-key"
+
+# Tags
+tags = {
+  Project     = "DataFlow"
+  Environment = "Development"
+  ManagedBy   = "Terraform"
+  Owner       = "Your Name"
+}
